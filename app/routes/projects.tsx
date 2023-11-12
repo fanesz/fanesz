@@ -7,6 +7,7 @@ import rpl from "../../assets/project-pictures/rpl.png";
 import blocksmasher from "../../assets/project-pictures/blocksmasher.png";
 import maribermusik from "../../assets/project-pictures/maribermusik.png";
 import advanceauth from "../../assets/project-pictures/advanceauth.png";
+import faneshelper from "../../assets/project-pictures/faneshelper.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -34,7 +35,7 @@ const Projects = () => {
           img: maribermusik
         },
         {
-          link: 'https://github.com/fanesz/Nindy-V14',
+          link: 'https://github.com/fanesz/mc-block-smasher',
           title: 'Block Smasher',
           description: 'A Minecraft Plugin for Discord Community Anniversary Event. Made with Java and Spigot API.',
           img: blocksmasher
@@ -44,6 +45,12 @@ const Projects = () => {
     {
       year: '2022',
       projects: [
+        {
+          link: 'https://main--serene-kashata-a012ac.netlify.app/',
+          title: 'Fanes Helper',
+          description: 'A multi-feature website with various tools such as string editor, pseudocode converter, statistics helper, etc. Made with Next.js, Tailwind CSS, and Strapi.',
+          img: faneshelper
+        },
         {
           link: 'https://github.com/fanesz/Nindy-V14',
           title: 'Discord Bot - Nindy',

@@ -1,8 +1,9 @@
-import { MetaFunction } from "@remix-run/react";
+import { Link, MetaFunction } from "@remix-run/react";
 import Card from "~/components/card";
 import profile from '../../assets/profile.png'
 import SectionTitle from "~/components/sectionTitle";
 import RedirectLink from "~/components/redirectLink";
+import chevron_right from '../../assets/chevron-right.svg'
 import logo_discord from '../../assets/logos/discord.svg'
 import logo_github from '../../assets/logos/github.svg'
 import logo_linkedin from '../../assets/logos/linkedin.svg'
@@ -116,13 +117,21 @@ export default function Index() {
                 <SectionTitle text="Programming Skills" />
               </div>
               <div>
-                Javascript, Typescript, Golang, Python, Java, React.js (Next, Vite, Remix, etc.), Bootstrap, Tailwind CSS, Discord.js, Express.js, Gin-Gothic, MySQL, PostgreSQL, Tensorflow, etc.
+                Javascript, Typescript, Golang, Python, Java, React.js (Next, Vite, Remix, etc.), Bootstrap, Tailwind CSS, Discord.js, Express.js, Gin-Gothic, Strapi, MySQL, PostgreSQL, Tensorflow, etc.
               </div>
+              <Link to='/projects' className="flex gap-2 w-fit mt-3 rounded-md text-sm p-1.5 px-3 bg-green-200 bg-opacity-50 hover:bg-opacity-60 hover:duration-200 transition-colors cursor-pointer">
+                <div className="pb-0.5">
+                  My Projects
+                </div>
+                <div className="my-auto">
+                  <img className="w-3" src={chevron_right} />
+                </div>
+              </Link>
             </div>
 
             <div className="mt-6">
               <div>
-                <SectionTitle text="What i love" />
+                <SectionTitle text="Interest" />
               </div>
               <div>
                 Art, Music, Nature, Anime, Game, Technology, Machine Learning, and Coding!
