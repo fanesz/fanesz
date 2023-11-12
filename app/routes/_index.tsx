@@ -35,8 +35,8 @@ export default function Index() {
     <div>
       <FadeInComponent delay={0} slideIn={true}>
         <Card>
-          <div className="flex gap-10">
-            <div className="w-fit ms-8">
+          <div className="md:flex gap-10 text-center w-full">
+            <div className="w-fit md:ms-8 mx-auto">
               <div className="relative w-24 h-24">
                 <img className="rounded-full border-2 border-gray-100 shadow-sm" src={profile} alt="profile picture" />
               </div>
@@ -61,7 +61,7 @@ export default function Index() {
               <div>
                 <SectionTitle text="Desc" />
               </div>
-              <div className="text-justify">
+              <div className="md:text-justify">
                 Fanes, a full-stack website developer from Indonesia, emphasizes his primary expertise in technology, with a particular focus on website development and project management. His skills extend beyond crafting visually appealing solutions with the latest technology, reaching towards efficient, innovative, and high-quality outcomes for every project.
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function Index() {
                 </div>
 
                 <div className="flex gap-3">
-                  <div className="font-bold">
+                  <div className="font-bold whitespace-nowrap">
                     2021 - now
                   </div>
                   <div>
@@ -100,7 +100,7 @@ export default function Index() {
                 </div>
 
                 <div className="flex gap-3">
-                  <div className="font-bold">
+                  <div className="font-bold whitespace-nowrap">
                     2023 - now
                   </div>
                   <div>
