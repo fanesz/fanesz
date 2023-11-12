@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font_sans {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: url("../assets/background-blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 120vh;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
