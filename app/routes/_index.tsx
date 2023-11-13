@@ -11,6 +11,7 @@ import logo_instagram from '../../assets/logos/instagram.svg'
 import logo_email from '../../assets/logos/email.svg'
 import SocialMedia from "~/components/socialMedia";
 import FadeInComponent from "~/components/fadeInComponent";
+import { useEffect } from "react";
 
 export function headers({
   loaderHeaders,
@@ -32,6 +33,12 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
   return (
     <div>
       <FadeInComponent delay={0} slideIn={true}>
@@ -119,7 +126,7 @@ export default function Index() {
               <div>
                 Javascript, Typescript, Golang, Python, Java, React.js (Next, Vite, Remix, etc.), Bootstrap, Tailwind CSS, Discord.js, Express.js, Gin-Gothic, Strapi, MySQL, PostgreSQL, Tensorflow, etc.
               </div>
-              <Link to='/projects' className="flex gap-2 w-fit mt-3 rounded-md text-sm p-1.5 px-3 bg-green-200 bg-opacity-50 hover:bg-opacity-60 hover:duration-200 transition-colors cursor-pointer">
+              <Link preventScrollReset={true} to='/projects' className="flex gap-2 w-fit mt-3 rounded-md text-sm p-1.5 px-3 bg-green-300 bg-opacity-50 hover:bg-opacity-60 hover:duration-200 transition-colors cursor-pointer">
                 <div className="pb-0.5">
                   My Projects
                 </div>

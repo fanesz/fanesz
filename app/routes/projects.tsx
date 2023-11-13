@@ -8,6 +8,7 @@ import blocksmasher from "../../assets/project-pictures/blocksmasher.png";
 import maribermusik from "../../assets/project-pictures/maribermusik.png";
 import advanceauth from "../../assets/project-pictures/advanceauth.png";
 import faneshelper from "../../assets/project-pictures/faneshelper.png";
+import { useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,7 +18,12 @@ export const meta: MetaFunction = () => {
 };
 
 const Projects = () => {
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
   const projectList = [
     {
       year: '2023',

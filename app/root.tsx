@@ -40,9 +40,8 @@ export default function App() {
 }
 
 function Layout(props: { children: React.ReactNode }) {
-
   return (
-    <div className="w-full max-w-3xl mx-auto xl:mt-16 lg:mt-10 md:mt-5 mt-3 px-10">
+    <div className="w-full max-w-3xl mx-auto xl:mt-16 lg:mt-10  mt-8 px-10">
       <motion.article
         initial="hidden"
         animate="enter"
@@ -50,7 +49,7 @@ function Layout(props: { children: React.ReactNode }) {
         variants={{
           hidden: { opacity: 0, x: 0, y: 20 },
           enter: { opacity: 1, x: 0, y: 0 },
-          exit: { opacity: 0, x: -0, y: 20 }
+          exit: { opacity: 0, x: 0, y: 20 }
         }}
         transition={{ duration: 0.5, type: 'easeInOut' }}
         style={{ position: 'relative' }}>
