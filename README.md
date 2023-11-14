@@ -4,4 +4,5 @@
 
 - 🌍 Based in Indonesia
 - 👤 My Portofolio at [fanes.site](https://fanes.site/)
+- 💼 My Linkedin at [here](https://www.linkedin.com/in/fanes-pratama-37a769149/)
 - ✉️ Contact me [fanes23.pratama@gmail.com](mailto:fanes23.pratama@gmail.com)
