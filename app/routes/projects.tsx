@@ -1,5 +1,6 @@
 import FadeInComponent from "~/components/fadeInComponent";
 import { MetaFunction } from "@remix-run/node";
+import { useEffect } from "react";
 import ProjectCard from "~/components/ProjectCard";
 import SectionTitle from "~/components/sectionTitle";
 import nindy from "../../assets/project-pictures/nindy.jpg";
@@ -8,7 +9,7 @@ import blocksmasher from "../../assets/project-pictures/blocksmasher.png";
 import maribermusik from "../../assets/project-pictures/maribermusik.png";
 import advanceauth from "../../assets/project-pictures/advanceauth.png";
 import faneshelper from "../../assets/project-pictures/faneshelper.png";
-import { useEffect } from "react";
+import browseractivitytracker from "../../assets/project-pictures/browseractivitytracker.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -28,6 +29,12 @@ const Projects = () => {
     {
       year: '2023',
       projects: [
+        {
+          link: 'https://www.npmjs.com/package/@fanesz/browser-activity-tracker',
+          title: 'Browser Activity Tracker',
+          description: 'An NPM module that can track any user activity such as switching applications/tabs, mouse clicks/movements, and keyboard presses',
+          img: browseractivitytracker
+        },
         {
           link: 'https://github.com/fanesz/Advance-Auth',
           title: 'Advance Auth',

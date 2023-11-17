@@ -13,8 +13,8 @@ body {
   background: url("../assets/background-blur.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 125vh;
+  /* background-position: center center; */
+  min-height: 100vh;
 }
 
 *::-webkit-scrollbar {
