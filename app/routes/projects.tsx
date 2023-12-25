@@ -10,6 +10,7 @@ import maribermusik from "../../assets/project-pictures/maribermusik.png";
 import advanceauth from "../../assets/project-pictures/advanceauth.png";
 import faneshelper from "../../assets/project-pictures/faneshelper.png";
 import browseractivitytracker from "../../assets/project-pictures/browseractivitytracker.png";
+import interviewku from "../../assets/project-pictures/interviewku.png"
 
 export const meta: MetaFunction = () => {
   return [
@@ -29,6 +30,12 @@ const Projects = () => {
     {
       year: '2023',
       projects: [
+        {
+          link: 'https://github.com/krisna31/interviewku',
+          title: 'InterviewKu',
+          description: 'A final capstone project for Bangkit Academy. My contribution, as a Machine Learning engineer, involves creating all the models using TensorFlow.',
+          img: interviewku
+        },
         {
           link: 'https://www.npmjs.com/package/@fanesz/browser-activity-tracker',
           title: 'Browser Activity Tracker',
