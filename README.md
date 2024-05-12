@@ -6,3 +6,11 @@
 - 👤 My Portofolio at [fanes.site](https://fanes.site/)
 - 💼 My Linkedin at [here](https://www.linkedin.com/in/fanes-pratama-37a769149/)
 - ✉️ Contact me [fanes23.pratama@gmail.com](mailto:fanes23.pratama@gmail.com)
+
+## GitHub Statistic
+<p align="left">
+  <a href="https://github.com/buhorii26">
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=fanesz&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=fanesz&layout=compact&theme=algolia"/>
+  </a>
+</p>
