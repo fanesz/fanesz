@@ -41,7 +41,7 @@ export default function App() {
 
 function Layout(props: { children: React.ReactNode }) {
   return (
-    <div className="w-full max-w-3xl mx-auto xl:mt-16 lg:mt-10 mt-8 px-10 pb-10">
+    <div className="w-full max-w-3xl mx-auto xl:mt-16 lg:mt-10 mt-4 px-4 pb-10">
       <motion.article
         initial="hidden"
         animate="enter"

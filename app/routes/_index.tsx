@@ -27,8 +27,15 @@ export function headers({
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Fanes's Portofolio" },
-    { name: "description", content: "A Portofolio Website of Fanes Pratama" },
+    { title: "Fanes's Portfolio - Full-Stack Website Developer from Indonesia" },
+    { name: "description", content: "Discover Fanes, a skilled full-stack website developer from Indonesia. Specializing in website development and project management, Fanes delivers visually appealing, innovative, and high-quality solutions." },
+    { name: "keywords", content: "Fanes, full-stack developer, website development, project management, Indonesian developer, web design, innovative solutions, high-quality projects" },
+    { name: "author", content: "Fanes" },
+    { property: "og:title", content: "Fanes's Portfolio - Full-Stack Website Developer from Indonesia" },
+    { property: "og:description", content: "Explore the portfolio of Fanes, an expert full-stack developer from Indonesia with a focus on website development and project management, delivering innovative and high-quality solutions." },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://www.fanes.site" },
+    { property: "og:image", content: "https://www.fanes.site/build/_assets/profile-C3NWOEPH.png" }
   ];
 };
 
@@ -150,7 +157,7 @@ export default function Index() {
               <div>
                 Javascript, Typescript, Golang, Python, Java, React.js (Next,
                 Vite, Remix, etc.), Bootstrap, Tailwind CSS, Discord.js,
-                Express.js, Gin-Gothic, Strapi, MySQL, PostgreSQL, Tensorflow,
+                Express.js, Gin-Gonic, Strapi, MySQL, PostgreSQL, Tensorflow,
                 etc.
               </div>
               <Link
