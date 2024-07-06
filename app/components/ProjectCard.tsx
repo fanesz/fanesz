@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react"
-import FadeInComponent from "./fadeInComponent"
+import FadeInComponent from "./FadeInComponent"
 
 const ProjectCard = (props: { link: string, img: string, delay: number, title: string, description: string }) => {
 

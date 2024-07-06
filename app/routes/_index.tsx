@@ -1,17 +1,18 @@
 import { Link, MetaFunction } from "@remix-run/react";
-import Card from "~/components/card";
+import Card from "~/components/Card";
 import profile from "../../assets/profile.png";
-import SectionTitle from "~/components/sectionTitle";
-import RedirectLink from "~/components/redirectLink";
+import SectionTitle from "~/components/SectionTitle";
+import RedirectLink from "~/components/RedirectLink";
 import chevron_right from "../../assets/chevron-right.svg";
 import logo_discord from "../../assets/logos/discord.svg";
 import logo_github from "../../assets/logos/github.svg";
 import logo_linkedin from "../../assets/logos/linkedin.svg";
 import logo_instagram from "../../assets/logos/instagram.svg";
 import logo_email from "../../assets/logos/email.svg";
-import SocialMedia from "~/components/socialMedia";
-import FadeInComponent from "~/components/fadeInComponent";
+import SocialMedia from "~/components/SocialMedia";
+import FadeInComponent from "~/components/FadeInComponent";
 import { useEffect } from "react";
+import SkillsCard from "~/components/SkillsCard";
 
 export function headers({
   loaderHeaders,
@@ -27,25 +28,46 @@ export function headers({
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Fanes's Portfolio - Full-Stack Website Developer from Indonesia" },
-    { name: "description", content: "Discover Fanes, a skilled full-stack website developer from Indonesia. Specializing in website development and project management, Fanes delivers visually appealing, innovative, and high-quality solutions." },
-    { name: "keywords", content: "Fanes, full-stack developer, website development, project management, Indonesian developer, web design, innovative solutions, high-quality projects" },
+    {
+      title: "Fanes's Portfolio - Full-Stack Website Developer from Indonesia",
+    },
+    {
+      name: "description",
+      content:
+        "Discover Fanes, a skilled full-stack website developer from Indonesia. Specializing in website development and project management, Fanes delivers visually appealing, innovative, and high-quality solutions.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Fanes, full-stack developer, website development, project management, Indonesian developer, web design, innovative solutions, high-quality projects",
+    },
     { name: "author", content: "Fanes" },
-    { property: "og:title", content: "Fanes's Portfolio - Full-Stack Website Developer from Indonesia" },
-    { property: "og:description", content: "Explore the portfolio of Fanes, an expert full-stack developer from Indonesia with a focus on website development and project management, delivering innovative and high-quality solutions." },
+    {
+      property: "og:title",
+      content:
+        "Fanes's Portfolio - Full-Stack Website Developer from Indonesia",
+    },
+    {
+      property: "og:description",
+      content:
+        "Explore the portfolio of Fanes, an expert full-stack developer from Indonesia with a focus on website development and project management, delivering innovative and high-quality solutions.",
+    },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.fanes.site" },
-    { property: "og:image", content: "https://www.fanes.site/build/_assets/profile-C3NWOEPH.png" }
+    {
+      property: "og:image",
+      content: "https://www.fanes.site/build/_assets/profile-C3NWOEPH.png",
+    },
   ];
 };
 
 export default function Index() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
   return (
     <div>
       <FadeInComponent delay={0} slideIn={true}>
@@ -94,13 +116,13 @@ export default function Index() {
                 <SectionTitle text="Bio" />
               </div>
               <div>
-                <div className="flex gap-3">
-                  <div className="font-bold">2003</div>
+                <div className="flex flex-col mb-3">
+                  <div className="font-bold">Apr 2003</div>
                   <div>Born in Palembang, Indonesia</div>
                 </div>
 
-                <div className="flex gap-3">
-                  <div className="font-bold">2021</div>
+                <div className="flex flex-col mb-3">
+                  <div className="font-bold">Jul 2021</div>
                   <div>
                     Graduated from{" "}
                     <RedirectLink link="https://www.smaxaverius3.sch.id/">
@@ -111,8 +133,10 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex gap-3">
-                  <div className="font-bold whitespace-nowrap">2021 - now</div>
+                <div className="flex flex-col mb-3">
+                  <div className="font-bold whitespace-nowrap">
+                    Jun 2021 - now
+                  </div>
                   <div>
                     Student at{" "}
                     <RedirectLink link="https://mdp.ac.id/">
@@ -123,8 +147,13 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex gap-3">
-                  <div className="font-bold whitespace-nowrap">2023 - 2024</div>
+                <div className="flex flex-col mb-3">
+                  <div className="font-bold whitespace-nowrap flex gap-2 items-baseline">
+                    <span>Aug 2023 - Jan 2024</span>
+                    <span className="text-gray-400 text-sm font-normal">
+                      (6 months)
+                    </span>
+                  </div>
                   <div>
                     Cohort at{" "}
                     <RedirectLink link="http://g.co/bangkit">
@@ -134,17 +163,33 @@ export default function Index() {
                     <span className="font-semibold">Machine Learning</span>{" "}
                     path.
                   </div>
+                  <div className="mt-1">
+                    <SkillsCard skills={["Python", "Tensorflow"]} />
+                  </div>
                 </div>
 
-                <div className="flex gap-3">
-                  <div className="font-bold whitespace-nowrap">2024 - now</div>
+                <div className="flex flex-col mb-3">
+                  <div className="font-bold whitespace-nowrap flex gap-2 items-baseline">
+                    <span>Feb 2024 - Jun 2024</span>
+                    <span className="text-gray-400 text-sm font-normal">
+                      (4 months)
+                    </span>
+                  </div>
                   <div>
                     Internship at{" "}
                     <RedirectLink link="https://www.bukitvista.com/">
                       Bukit Vista
                     </RedirectLink>{" "}
                     as a{" "}
-                    <span className="font-semibold">Frontend Developer</span>.
+                    <span className="font-semibold">
+                      Full Stack Web Developer
+                    </span>
+                    .
+                  </div>
+                  <div className="mt-1">
+                    <SkillsCard
+                      skills={["Javascript", "React.js", "Express.js"]}
+                    />
                   </div>
                 </div>
               </div>

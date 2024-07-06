@@ -2,8 +2,8 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, } from "@r
 import type { MetaFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css";
 import { LinksFunction } from "@remix-run/react/dist/routeModules";
-import Navbar from "./components/navbar";
-import Card from "./components/card";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
 
