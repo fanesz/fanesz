@@ -1,6 +1,6 @@
 # Hello, World! My name is Fanes Pratama
 
-<b>"I'm a dedicated full-stack web developer who loves creating things. I'm a fast learner and enjoy exploring new technologies, programming languages, and frameworks."</b>
+<b>"I'm a dedicated full-stack developer who loves creating things. I'm a fast learner and enjoy exploring new technologies, programming languages, and frameworks."</b>
 
 - 🌍 Based in Indonesia
 - 👤 My Portofolio at [fanes.my.id](https://fanes.my.id/)
