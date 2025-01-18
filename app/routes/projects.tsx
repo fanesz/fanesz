@@ -34,7 +34,7 @@ const Projects = () => {
   }, []);
   const projectList = [
     {
-      year: "2024",
+      year: "2025",
       projects: [
         {
           link: "https://www.linkedin.com/pulse/how-build-free-whatsapp-client-api-gateway-using-golang-fanes-pratama-4hb4c",
@@ -43,6 +43,11 @@ const Projects = () => {
             "A step-by-step guide on how to build a free WhatsApp client API gateway using Golang.",
           img: freewhatsappclient,
         },
+      ],
+    },
+    {
+      year: "2024",
+      projects: [
         {
           link: "https://github.com/orgs/PABI-Tugas-UAS/repositories",
           title: "Liga Inggris Mobile",
