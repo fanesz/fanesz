@@ -53,11 +53,13 @@ export const meta: MetaFunction = () => {
         "Explore the portfolio of Fanes, an expert full-stack developer from Indonesia with a focus on website development and project management, delivering innovative and high-quality solutions.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:url", content: "https://www.fanes.site" },
+    { property: "og:url", content: "https://www.fanes.my.id" },
     {
       property: "og:image",
-      content: "https://www.fanes.site/build/_assets/profile-C3NWOEPH.png",
+      content: "https://www.fanes.my.id/build/_assets/profile-C3NWOEPH.png",
     },
+    { rel: "canonical", href: "https://www.fanes.my.id" },
+    { name: "language", content: "en" },
   ];
 };
 
