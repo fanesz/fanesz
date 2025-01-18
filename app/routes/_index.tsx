@@ -62,12 +62,107 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+  const bioList = [
+    {
+      year: "2003",
+      content: <div>Born in Palembang, Indonesia</div>,
+    },
+    {
+      year: "Jun, 2021",
+      content: (
+        <div>
+          Graduated from{" "}
+          <RedirectLink link="https://www.smaxaverius3.sch.id/">
+            Xaverius 3 High School
+          </RedirectLink>{" "}
+          in Palembang with a major in{" "}
+          <span className="font-semibold">Natural Sciences</span>.
+        </div>
+      ),
+    },
+    {
+      year: "Jul, 2021 - now",
+      duration: "3 yrs+",
+      content: (
+        <div>
+          Student at{" "}
+          <RedirectLink link="https://mdp.ac.id/">
+            Multi Data Palembang University
+          </RedirectLink>{" "}
+          with a major in{" "}
+          <span className="font-semibold">Information System</span>.
+        </div>
+      ),
+    },
+    {
+      year: "Aug, 2023 - Jan, 2024",
+      duration: "6 mos",
+      skills: ["Python", "Tensorflow"],
+      content: (
+        <div>
+          Cohort at{" "}
+          <RedirectLink link="http://g.co/bangkit">Bangkit 2023</RedirectLink>{" "}
+          with a <span className="font-semibold">Machine Learning</span> path.
+        </div>
+      ),
+    },
+    {
+      year: "Feb, 2024 - Jun, 2024",
+      duration: "5 mos",
+      skills: [
+        "Javascript",
+        "React.js",
+        "Express.js",
+        "OOP",
+        "React-Context",
+        "Redux",
+      ],
+      content: (
+        <div>
+          Internship at{" "}
+          <RedirectLink link="https://www.bukitvista.com/">
+            Bukit Vista
+          </RedirectLink>{" "}
+          as a <span className="font-semibold">Full-stack Web Developer</span>.
+        </div>
+      ),
+    },
+  ];
+
+  const socmedList = [
+    {
+      link: "https://www.linkedin.com/in/fanes-pratama-37a769149/",
+      img: logo_linkedin,
+      username: "Fanes Pratama",
+    },
+    {
+      link: "https://github.com/fanesz",
+      img: logo_github,
+      username: "fanesz",
+    },
+    {
+      link: "https://www.instagram.com/fanes_pratama/",
+      img: logo_instagram,
+      username: "fanes_pratama",
+    },
+    {
+      link: "https://discordapp.com/users/278169600728760320/",
+      img: logo_discord,
+      username: "vanezzz",
+    },
+    {
+      img: logo_email,
+      username: "fanes23.pratama@gmail.com",
+    },
+  ];
+
   return (
     <div>
       <FadeInComponent delay={0} slideIn={true}>
@@ -102,9 +197,9 @@ export default function Index() {
                 <SectionTitle text="Desc" />
               </div>
               <div className="md:text-justify">
-                Fanes, a full-stack website developer from Indonesia, emphasizes
-                his primary expertise in technology, with a particular focus on
-                website development and project management. His skills extend
+                Fanes, a full-stack developer from Indonesia, emphasizes his
+                primary expertise in technology, with a particular focus on
+                software development and project management. His skills extend
                 beyond crafting visually appealing solutions with the latest
                 technology, reaching towards efficient, innovative, and
                 high-quality outcomes for every project.
@@ -116,82 +211,26 @@ export default function Index() {
                 <SectionTitle text="Bio" />
               </div>
               <div>
-                <div className="flex flex-col mb-3">
-                  <div className="font-bold">Apr 2003</div>
-                  <div>Born in Palembang, Indonesia</div>
-                </div>
-
-                <div className="flex flex-col mb-3">
-                  <div className="font-bold">Jul 2021</div>
-                  <div>
-                    Graduated from{" "}
-                    <RedirectLink link="https://www.smaxaverius3.sch.id/">
-                      Xaverius 3 High School
-                    </RedirectLink>{" "}
-                    in Palembang with a major in{" "}
-                    <span className="font-semibold">Natural Sciences</span>.
+                {bioList.map((item, index) => (
+                  <div key={index} className="flex flex-col mb-3">
+                    <div className="flex gap-2 items-baseline">
+                      <span className="font-bold text-[0.9rem]">
+                        {item.year}
+                      </span>
+                      {item.duration && (
+                        <span className="text-gray-400 text-[0.75rem]">
+                          ({item.duration})
+                        </span>
+                      )}
+                    </div>
+                    <div className="-mt-1">{item.content}</div>
+                    {item.skills && (
+                      <div className="mt-1">
+                        <SkillsCard skills={item.skills} />
+                      </div>
+                    )}
                   </div>
-                </div>
-
-                <div className="flex flex-col mb-3">
-                  <div className="font-bold whitespace-nowrap">
-                    Jun 2021 - now
-                  </div>
-                  <div>
-                    Student at{" "}
-                    <RedirectLink link="https://mdp.ac.id/">
-                      Multi Data Palembang University
-                    </RedirectLink>{" "}
-                    with a major in{" "}
-                    <span className="font-semibold">Information System</span>.
-                  </div>
-                </div>
-
-                <div className="flex flex-col mb-3">
-                  <div className="font-bold whitespace-nowrap flex gap-2 items-baseline">
-                    <span>Aug 2023 - Jan 2024</span>
-                    <span className="text-gray-400 text-sm font-normal">
-                      (6 months)
-                    </span>
-                  </div>
-                  <div>
-                    Cohort at{" "}
-                    <RedirectLink link="http://g.co/bangkit">
-                      Bangkit 2023
-                    </RedirectLink>{" "}
-                    with a{" "}
-                    <span className="font-semibold">Machine Learning</span>{" "}
-                    path.
-                  </div>
-                  <div className="mt-1">
-                    <SkillsCard skills={["Python", "Tensorflow"]} />
-                  </div>
-                </div>
-
-                <div className="flex flex-col mb-3">
-                  <div className="font-bold whitespace-nowrap flex gap-2 items-baseline">
-                    <span>Feb 2024 - Jun 2024</span>
-                    <span className="text-gray-400 text-sm font-normal">
-                      (4 months)
-                    </span>
-                  </div>
-                  <div>
-                    Internship at{" "}
-                    <RedirectLink link="https://www.bukitvista.com/">
-                      Bukit Vista
-                    </RedirectLink>{" "}
-                    as a{" "}
-                    <span className="font-semibold">
-                      Full Stack Web Developer
-                    </span>
-                    .
-                  </div>
-                  <div className="mt-1">
-                    <SkillsCard
-                      skills={["Javascript", "React.js", "Express.js"]}
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -200,10 +239,10 @@ export default function Index() {
                 <SectionTitle text="Programming Skills" />
               </div>
               <div>
-                Javascript, Typescript, Golang, Python, Java, React.js (Next,
-                Vite, Remix, etc.), Bootstrap, Tailwind CSS, Discord.js,
-                Express.js, Gin-Gonic, Strapi, MySQL, PostgreSQL, Tensorflow,
-                etc.
+                Javascript, Typescript, Golang, Python, Java, Dart, React.js
+                (Next, Vite, Remix, etc.), Tailwind CSS, Bootstrap, Flutter,
+                GetX, Express.js, Gin, Fiber, Strapi, Electron, MySQL,
+                PostgreSQL, SQLite, MongoDB, Redis, Discord.js, Tensorflow, etc.
               </div>
               <Link
                 preventScrollReset={true}
@@ -232,34 +271,14 @@ export default function Index() {
                 <SectionTitle text="Social Media" />
               </div>
               <div>
-                <SocialMedia
-                  link="https://www.linkedin.com/in/fanes-pratama-37a769149/"
-                  img={logo_linkedin}
-                  username="Fanes Pratama"
-                />
-
-                <SocialMedia
-                  link="https://github.com/fanesz"
-                  img={logo_github}
-                  username="fanesz"
-                />
-
-                <SocialMedia
-                  link="https://www.instagram.com/fanes_pratama/"
-                  img={logo_instagram}
-                  username="fanes_pratama"
-                />
-
-                <SocialMedia
-                  link="https://discordapp.com/users/278169600728760320/"
-                  img={logo_discord}
-                  username="vanezzz"
-                />
-
-                <SocialMedia
-                  img={logo_email}
-                  username="fanes23.pratama@gmail.com"
-                />
+                {socmedList.map((item, index) => (
+                  <SocialMedia
+                    key={index}
+                    link={item.link}
+                    img={item.img}
+                    username={item.username}
+                  />
+                ))}
               </div>
             </div>
           </div>
