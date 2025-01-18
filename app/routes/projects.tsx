@@ -12,6 +12,11 @@ import faneshelper from "../../assets/project-pictures/faneshelper.webp";
 import browseractivitytracker from "../../assets/project-pictures/browseractivitytracker.webp";
 import interviewku from "../../assets/project-pictures/interviewku.webp";
 import golangrestfulapitemplete from "../../assets/project-pictures/golangrestfulapitemplete.webp";
+import freewhatsappclient from "../../assets/project-pictures/freewhatsappclient.png";
+import uvcemobile from "../../assets/project-pictures/uvcemobile.png";
+import portalloker from "../../assets/project-pictures/portalloker.png";
+import ligainggris from "../../assets/project-pictures/ligainggris.jpeg";
+import fanesnotes from "../../assets/project-pictures/fanesnotes.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -32,11 +37,46 @@ const Projects = () => {
       year: "2024",
       projects: [
         {
+          link: "https://www.linkedin.com/pulse/how-build-free-whatsapp-client-api-gateway-using-golang-fanes-pratama-4hb4c",
+          title: "Free WhatsApp Client Integration",
+          description:
+            "A step-by-step guide on how to build a free WhatsApp client API gateway using Golang.",
+          img: freewhatsappclient,
+        },
+        {
+          link: "https://github.com/orgs/PABI-Tugas-UAS/repositories",
+          title: "Liga Inggris Mobile",
+          description:
+            "A mobile app project for Mobile Programming course as the Project Leader and developer. The app was built using Flutter with GetX and Rust for the baclend.",
+          img: ligainggris,
+        },
+        {
+          link: "https://github.com/orgs/PAWII-Portal-Loker/repositories",
+          title: "Portal Loker",
+          description:
+            "A job portal website project for Web Dev collage course as the Project Leader and developer. The website was built using ReactTS, ExpressTS with OOP clean design architecture, and MongoDB.",
+          img: portalloker,
+        },
+        {
+          link: "https://ukmc.ac.id/pengumuman/universties-virtual-career-expo-uvce-2024",
+          title: "UVCE Mobile App",
+          description:
+            "I led the development of a Mobile App for the UVCE 2024 as the Project Leader and backend developer. I also supervised the work of mobile and web developers. The app was built using Flutter, ReactTS, and Golang.",
+          img: uvcemobile,
+        },
+        {
           link: "https://github.com/fanesz/golang-restful-api-templete",
           title: "Golang RESTful API Templete",
           description:
             "A templete to start golang RESTful API project with Expressjs design pattern. Made with Golang, Gin-Gonic, Gorm, and PostgreSQL.",
           img: golangrestfulapitemplete,
+        },
+        {
+          link: "https://github.com/fanesz/FanesNotes",
+          title: "Fanes Notes",
+          description:
+            "A simple notepad Desktop App with several features. Made with Electron and Typescript.",
+          img: fanesnotes,
         },
       ],
     },
