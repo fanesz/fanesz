@@ -52,7 +52,7 @@ const Projects = () => {
           link: "https://github.com/orgs/PABI-Tugas-UAS/repositories",
           title: "Liga Inggris Mobile",
           description:
-            "A mobile app project for Mobile Programming course as the Project Leader and developer. The app was built using Flutter with GetX and Rust for the baclend.",
+            "A mobile app project for Mobile Programming collage course as the Project Leader and developer. The app was built using Flutter with GetX and Rust for the backend.",
           img: ligainggris,
         },
         {
@@ -146,7 +146,7 @@ const Projects = () => {
           link: "https://github.com/fanesz/Project-RPL",
           title: "Ayamku",
           description:
-            "A full-stack project for Software Engineering course. Made with React.js, Express.js, and MySQL.",
+            "A full-stack project for Software Engineering collage course. Made with React.js, Express.js, and MySQL.",
           img: rpl,
         },
       ],
