@@ -52,14 +52,14 @@ const Projects = () => {
           link: "https://github.com/orgs/PABI-Tugas-UAS/repositories",
           title: "Liga Inggris Mobile",
           description:
-            "A mobile app project for Mobile Programming collage course as the Project Leader and developer. The app was built using Flutter with GetX and Rust for the backend.",
+            "A mobile app project for Mobile Programming college course as the Project Leader and developer. The app was built using Flutter with GetX and Rust for the backend.",
           img: ligainggris,
         },
         {
           link: "https://github.com/orgs/PAWII-Portal-Loker/repositories",
           title: "Portal Loker",
           description:
-            "A job portal website project for Web Dev collage course as the Project Leader and developer. The website was built using ReactTS, ExpressTS with OOP clean design architecture, and MongoDB.",
+            "A job portal website project for Web Dev college course as the Project Leader and developer. The website was built using ReactTS, ExpressTS with OOP clean design architecture, and MongoDB.",
           img: portalloker,
         },
         {
@@ -146,7 +146,7 @@ const Projects = () => {
           link: "https://github.com/fanesz/Project-RPL",
           title: "Ayamku",
           description:
-            "A full-stack project for Software Engineering collage course. Made with React.js, Express.js, and MySQL.",
+            "A full-stack project for Software Engineering college course. Made with React.js, Express.js, and MySQL.",
           img: rpl,
         },
       ],
