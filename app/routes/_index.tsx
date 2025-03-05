@@ -90,8 +90,8 @@ export default function Index() {
       ),
     },
     {
-      year: "Jul, 2021 - now",
-      duration: "3 yrs+",
+      year: "Sep, 2021 - Feb, 2025",
+      duration: "3.5 yrs",
       content: (
         <div>
           Student at{" "}
@@ -132,7 +132,25 @@ export default function Index() {
           <RedirectLink link="https://www.bukitvista.com/">
             Bukit Vista
           </RedirectLink>{" "}
-          as a <span className="font-semibold">Full-stack Web Developer</span>.
+          as a <span className="font-semibold">Full Stack Web Developer</span>.
+        </div>
+      ),
+    },
+    {
+      year: "Mar, 2025 - Now",
+      skills: [
+        "Typescript",
+        "React.js",
+        "Next.js",
+        "Redux",
+      ],
+      content: (
+        <div>
+          Internship at{" "}
+          <RedirectLink link="https://www.swiperx.com/">
+            SwipeRx
+          </RedirectLink>{" "}
+          as a <span className="font-semibold">Full Stack Developer</span>.
         </div>
       ),
     },
@@ -161,7 +179,7 @@ export default function Index() {
     },
     {
       img: logo_email,
-      username: "fanes23.pratama@gmail.com",
+      username: "fanespra@gmail.com",
     },
   ];
 
