@@ -17,6 +17,7 @@ import uvcemobile from "../../assets/project-pictures/uvcemobile.png";
 import portalloker from "../../assets/project-pictures/portalloker.png";
 import ligainggris from "../../assets/project-pictures/ligainggris.jpeg";
 import fanesnotes from "../../assets/project-pictures/fanesnotes.png";
+import sessionswitcher from "../../assets/project-pictures/sessionswitcher.png";
 
 export const meta: MetaFunction = () => {
   return [
@@ -42,6 +43,13 @@ const Projects = () => {
           description:
             "A step-by-step guide on how to build a free WhatsApp client API gateway using Golang.",
           img: freewhatsappclient,
+        },
+        {
+          link: "https://github.com/fanesz/session-switcher",
+          title: "Session Switcher Browser Extension",
+          description:
+            "A browser extension that allows users to switch between different sessions easily.",
+          img: sessionswitcher,
         },
       ],
     },
