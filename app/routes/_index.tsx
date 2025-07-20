@@ -146,7 +146,7 @@ export default function Index() {
       ],
       content: (
         <div>
-          Internship at{" "}
+          Associated at{" "}
           <RedirectLink link="https://www.swiperx.com/">
             SwipeRx
           </RedirectLink>{" "}
