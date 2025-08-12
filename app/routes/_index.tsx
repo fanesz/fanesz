@@ -141,15 +141,15 @@ export default function Index() {
       skills: [
         "Typescript",
         "React.js",
-        "Next.js",
+        "Nest.js",
         "Redux",
+        "GCP Pub/Sub",
+        "Scrum",
       ],
       content: (
         <div>
           Associated at{" "}
-          <RedirectLink link="https://www.swiperx.com/">
-            SwipeRx
-          </RedirectLink>{" "}
+          <RedirectLink link="https://www.swiperx.com/">SwipeRx</RedirectLink>{" "}
           as a <span className="font-semibold">Full Stack Developer</span>.
         </div>
       ),
@@ -259,10 +259,24 @@ export default function Index() {
                 <SectionTitle text="Programming Skills" />
               </div>
               <div>
-                Javascript, Typescript, Golang, Python, Java, Dart, React.js
-                (Next, Vite, Remix, etc.), Tailwind CSS, Bootstrap, Flutter,
-                GetX, Express.js, Gin, Fiber, Strapi, Electron, MySQL,
-                PostgreSQL, SQLite, MongoDB, Redis, Discord.js, Tensorflow, etc.
+                <span className="text-orange-50">
+                  Javascript, Typescript, Golang, Python, Java, Dart,{" "}
+                </span>
+                <span className="text-emerald-50">
+                  React.js (Next, Vite, Remix, etc.), Redux, Zustand, Tailwind CSS, Bootstrap,
+                  Flutter, GetX,{" "}
+                </span>
+                <span className="text-blue-50">
+                  Express.js, Nest.js, Gin, Fiber, Electron, Tauri,{" "}
+                </span>
+                <span className="text-purple-50">
+                  Docker, Docker-Compose, VPS deployment, domain management,
+                  GCP (pub/sub topic, scheduler, logs explorer),{" "}
+                </span>
+                <span className="text-gray-50">
+                  MySQL, PostgreSQL, SQLite, MongoDB, Redis,
+                  Discord.js, Tensorflow, etc.
+                </span>
               </div>
               <Link
                 preventScrollReset={true}
